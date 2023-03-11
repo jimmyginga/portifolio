@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --gb-color: #050A24;
+    --text-white: #fff;
+}
+a {
+    text-decoration: none;
+    color: var(--text-white);
+}
+body {
+    background-color: var(--gb-color);
+    color: var(--text-white);
+    font-family: "Vigo", sans-serif;
+}
+
+.cabecalho {
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho .logo a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 2rem;
+    /* font-weight: lighter; */
+}
+
+.cabecalho .logo a span {
+    font-weight: bolder;
+}
+
+.menu ul li{
+    transition: all .5s;
+    display: inline;
+    padding: 10px;
+}
+.menu ul li a {
+    transition: all .1s;
+}
+.menu ul li a:hover {
+    transition: all 9s;
+    text-transform: uppercase;
+}
+#banner {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+#banner h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+#banner p {
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+#banner .left .avatar-img {
+    height: 500px !important;
+}
+
+.socials {
+    display: flex;
+    margin-top: 10px;;
+}
+.socials  div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #091034;
+    border-radius: 5px;
+    margin-right: 15px;
+    padding: 5px;
+}
+.socials-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+#tecnologias {
+    margin-top: -10px;
+    box-shadow: 1px -14px 30px #2226;
+    background-color: #091034;
+    
+    display: flex;
+    justify-content: center;
+
+}
+#tecnologias div {
+    text-align: center;
+    background-color: #050A24;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#tecnologias .tecnologias-img {
+    width: 100px;
+    height: 100px;
+}
+#experiencias{
+    width: 80%;
+    margin: auto;
+}
+
+#experiencias div {
+    background: #091034;
+    padding: 30px 20px;
+    margin-top: 30px;
+    width: 60%;
+    margin:60px auto;
+    border-radius: 15px;
+}
+
+#experiencias div .descricao-vaga {
+    line-height: 2rem;
+}
+#experiencias div .cargo {
+   font-weight: lighter;
+   margin: 10px 0;
+}
+#experiencias div .empresa {
+   font-weight: bold;
+   margin: 10px 0;
+}
+
+#experiencias div .periodo {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: aqua;
+ }
+ #projectos {
+    width: 100%;
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+@media (max-width: 700px) {
+    #projectos {
+        flex-wrap: wrap;
+    }
+}
+ #projectos .cartao-projecto {
+    width: 200px;
+    height: 250px;
+    background-color: #091034;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 15px;
+ }
+ 
+
+ #projectos .cartao-projecto img{
+    width: 5rem;
+ }
+ #projectos .projecto-titulo{
+    text-align: center;
+    line-height: 30px;
+    font-size: larger;
+    font-weight: lighter;
+ }
+
+ #projectos .descricao-projecto{
+    text-align: justify;
+    line-height: 19px;
+    height: auto;
+ }
+ #projectos .btn-area{
+    margin-top: 20px;
+ }
+ #projectos .btn-area a{
+    transition: all .5s;
+    background-color: #122270;
+    padding: 10px 15px;  
+    border-radius: 5px;
+ }
+
+ #projectos .btn-area a:hover{
+    transition: all .5s;
+    background-color: var(--text-white);
+    color: var(--gb-color);
+    border: solid 2px var(--gb-color);
+ }
+
+ 
